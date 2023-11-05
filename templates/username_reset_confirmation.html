@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Username Reset Confirmation</title>
+</head>
+<body>
+    <h1>Username Reset Confirmation</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">New Username:</label>
+        <input type="text" name="username" required><br><br>
+        <input type="submit" value="Reset Username">
+    </form>
+</body>
+</html>
